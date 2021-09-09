@@ -1,0 +1,108 @@
+------<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<style>
+body {font-family: "Roboto", serif;}
+* {box-sizing: border-box;
+  
+}
+
+
+input[type=text], input[type=password] {
+ width: 100%;
+  padding: 15px;
+  margin: 10px 20px 10px 0px;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 15px;
+  background: white;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: white;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+button {
+  background-color: #3498DB;
+  color: white;
+  padding: 14px 20px;
+  margin: 20px 40px 10px 30px;
+  border: 1px solid #3498DB;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 312px;
+  height: 53px;
+  
+  opacity: 0.9;
+}
+
+lable.gender { color: yellow;}
+
+button:hover {
+  opacity:1;
+}
+
+
+.container {
+  padding: 16px;
+  border: 1px solid #E5EEF3;
+  border-radius: 30px;
+  background-color: #E5EEF3;
+  height: 565px;
+  width:399px;
+}
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+  .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+<body>
+
+<form action="/action_page.php" style="border:0px solid white">
+  <div class="container">
+   
+    <hr>
+
+    <label for="FullName"><b>FullName</b></label>
+    <input type="text" placeholder="Your Name" name="name" required>
+
+    <label for="email"><b>Email Address</b></label>
+    <input type="password" placeholder="Email Address" name="email" required>
+
+    <label for="Dateofbirth"><b>Date of Birth</b></label>
+    <input type="password" placeholder="DD/MM/YYYY" name="Date" required>
+    
+      <label for="gender"><b>Gender</b></label>
+    <input type="text" placeholder="Gender" name="gender" required>
+    
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> I accept terms & conditions
+    </label>
+    
+    
+
+    <div class="clearfix">
+     
+      <button type="submit" class="signupbtn">Create Account</button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>
